@@ -1,0 +1,18 @@
+\documentclass[]{article}
+
+%opening
+\title{Identifying macro moths with micro-features}
+\author{Paul J. Palmer}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Abstract
+\end{abstract}
+
+\section{title}
+
+text
+\end{document}
