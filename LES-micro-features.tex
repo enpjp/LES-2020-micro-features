@@ -1,6 +1,9 @@
 \documentclass[]{article}
-\usepackage{natbib}
-\bibliographystyle{unsrtnat}
+%\usepackage{natbib}
+\usepackage[ style=authoryear]{biblatex}
+%\bibliography{library}
+\addbibresource{library.bib}
+%\bibliographystyle{unsrtnat}
 \usepackage{graphicx}
 %\usepackage{placeins}
 \usepackage[british]{babel}
@@ -11,6 +14,27 @@
 %\graphicspath{ {./images/} }
 \usepackage{wrapfig}
 \renewcommand{\figurename}{Fig.}
+
+%\DeclareSourcemap{
+%	\maps{
+%		\map{ % Replaces '{\_}', '{_}' or '\_' with just '_'
+%			\step[fieldsource=url,
+%			match=\regexp{\{\\\_\}|\{\_\}|\\\_},
+%			replace=\regexp{\_}]
+%		}
+%		\map{ % Replaces '{'$\sim$'}', '$\sim$' or '{~}' with just '~'
+%			\step[fieldsource=url,
+%			match=\regexp{\{\$\\sim\$\}|\{\~\}|\$\\sim\$},
+%			replace=\regexp{\~}]
+%		}
+%		\map{ % Replaces '{\$}'
+%			\step[fieldsource=url,
+%			match=\regexp{\{\\\x{26}\}},
+%			replace=\regexp{\x{26}}]
+%		}
+%	}
+%}
+
 %opening
 
 \title{Identifying macro-moths with micro-features}
@@ -28,11 +52,11 @@ This article explores the use of external microscopic characters to support the 
 \end{abstract}
 
 \section*{A Difficult Specimen to ID}
-The specimen used as an example here was taken at sugar 2020-08-16 on the Rutland Water Nature Reserve. It would have been recorded as a very worn example of \textit{Hypena proboscidalis} (The Snout) if it had not briefly raised its wings in a posture uncharacteristic for this species, placing an element of doubt in this presumed ID. As can be seen in Figure~\ref{fig:202009131026pjp-1}, the specimen lacks the long, forward pointing palps that give the Snout its vernacular name, buts its wings have the same slightly hooked shape  and it displays a similar median fascia as in the verified \textit{Hypena proboscidalis} illustrated in  Figure~\ref{fig:S202012271446-1}.  It would be easy to presume that the palps have been broken in what appears to be a worn specimen due to the ill-defined markings, but examination under magnification, as shown in  Figure~\ref{fig:20201112-1} reveals that the palps are short but undamaged. Less obvious,  is the lack of ocelli above the compound eye, clearly seen in \textit{Hypena proboscidalis} Figure~\ref{fig:S202012271446-4}, and visible chaetosemata (hair like sensory organs above the eye), which  eliminate \textit{Hypena proboscidalis} as a candidate taxon for the specimen.
+The specimen used as an example here was taken at sugar 2020-08-16 on the Rutland Water Nature Reserve. It would have been recorded as a very worn example of \textit{Hypena proboscidalis} (The Snout) if it had not briefly raised its wings in a posture uncharacteristic for this species, placing an element of doubt in this presumed ID. As can be seen in Figure~\ref{fig:202009131026pjp-1}, the specimen lacks the long, forward pointing palps that give the Snout its vernacular name, buts its wings have the same slightly hooked shape  and it displays a similar median fascia as in the verified \textit{Hypena proboscidalis} illustrated in  Figure~\ref{fig:S202012271446-1}.  It would be easy to presume that the palps have been broken in what appears to be a worn specimen due to the ill-defined markings, but examination under magnification, as shown in  Figure~\ref{fig:20201112-1} reveals that the palps are short but undamaged. Less obvious,  are the absence ocelli and presence of chaetosemata (hair like sensory organs above the compound eye). The ocelli clearly visible in \textit{Hypena proboscidalis} Figure~\ref{fig:S202012271446-4} and chaetosemata absent,  which  eliminate \textit{Hypena proboscidalis} as a candidate taxon for the unknown specimen.
 
 \section*{The Identification Method}
 Identification of an unknown Lepidoptera specimen may be thought of as the process by which the  observable features are matched to those of a known taxon.
-For a general discussion on the topic of identification \citet{Pankhurst1978} is still relevant to the field naturalist today.
+For a general discussion on the topic of identification \cite{Pankhurst1978} is still relevant to the field naturalist today.
  Given that there are about 2,500 UK Lepidoptera taxa of which around 450 are thought of as \enquote{the larger moths} a systematic approach is needed as an alternative to randomly flipping through the pages of a guide looking for a match.
  
  Inspired by Pankhurst, the approach followed by the author is to list plausible candidate species and to mark each with a \enquote{+} for matching features and \enquote{-} contradicting features. A \enquote{?} is used to  indicates that a feature is either. \enquote{not known} or not yet determined. An identification is achieved when one of the candidates has multiple \enquote{+} and no \enquote{-} against its name.
@@ -41,21 +65,21 @@ For a general discussion on the topic of identification \citet{Pankhurst1978} is
  
  In practical terms,  examination of specimens under  3 --- 30 x magnification reveals additional characters  in both live and preserved specimens that are useful for ID purposes. The low magnification required places these features in range of hand lenses and USB microscopes, and while good lighting is necessary, there is no need to specially prepare the specimen.
  
- Unfortunately there a few resources listing the features we need to consider, but a good place to start is the matrix key published by \citet{Dombroskie2011}. While it is intended for Canadian Lepidoptera, it can also be used to provide an indicative guide to UK lepidoptera families. Importantly, it contains a well presented glossary of external characters and their diagnostic importance in the determination specimen family. Both the paper and software have been made available free of charge, and are well worth acquiring.
+ Unfortunately there a few resources listing the features we need to consider, but a good place to start is the matrix key published by \cite{Dombroskie2011}. While it is intended for Canadian Lepidoptera, it can also be used to provide an indicative guide to UK lepidoptera families. Importantly, it contains a well presented glossary of external characters and their diagnostic importance in the determination specimen family. Both the paper and software have been made available free of charge, and are well worth acquiring.~\footnote{ The key may be donloaded from: \url{https://cjai.biologicalsurvey.ca/d_17/d_17_download.html}}
  
 \section*{Making a Determination}
 We start by noting observation about the unknown specimen using the standard terminology recommended by Dombroskie.
-Forewing length: 16.7 mm; Forewing width: 11.4, mm;  Ocelli: Absent;  Labial palps: Forward. Chaetosemata (hair-like organs on the head):  Present. Flight time: August. The gender can be determined by examination of the frenulum linking the wings, which here consists of a pair of bristles indicating that the specimen is female.
+Forewing length: 17 mm; Forewing width: 11 mm;  Ocelli: Absent;  Labial palps: Forward. Chaetosemata (hair-like organs on the head):  Present. Flight time: August. The gender can be determined by examination of the frenulum linking the wings, which here consists of a pair of bristles indicating that the specimen is female.
 
 %In this case, although the specimen is a macro-moth, the family \textit{Erebidae}.
-Using the Dombroskie key, the lack of oceli (simple eyes), coiled unscaled proboscis, visible chaetosemata, and forward facing palps are suggestive of family \textit{Geometridae}. (See Figure~\ref{fig:20201112-1}). The forewing length of 16.7 mm and the flight time of August are also useful for eliminating many possible UK taxa.
+Using the Dombroskie key, the lack of oceli (simple eyes), coiled unscaled proboscis, visible chaetosemata, and forward facing palps are suggestive of family \textit{Geometridae}. (See Figure~\ref{fig:20201112-1}). The forewing length of 17 mm and the flight time of August are also useful for eliminating many possible UK taxa.
 
-Selection of candidate \textit{Geometridae} is best made by considering the size and shape of the specimen for ID as in Figure~\ref{fig:s202012271445-silhouette}, using  a guide such as \citet{Skinner1984} or \citet{Waring2018}.  While the wing patterns can be variable in lepidoptera, the shape tends to be constant, and variation in size limited to a nominal range.  The reader is invited to make a personal list of candidate \textit{Geometridae} using the silhouette and size as the main discriminators.  Many groups of species can be discounted with a cursory glance using these characters, and others eliminated by a more in-depth consideration of supporting taxa descriptions.
+Selection of candidate \textit{Geometridae} is best made by considering the size and shape of the specimen for ID as in Figure~\ref{fig:s202012271445-silhouette}, using  a guide such as \cite{Skinner1984} or \cite{Waring2018}.  While the wing patterns can be variable in lepidoptera, the shape tends to be constant, and variation in size limited to a nominal range.  The reader is invited to make a personal list of candidate \textit{Geometridae} using the silhouette and size as the main discriminators.  Many groups of species can be discounted with a cursory glance using these characters, and others eliminated by a more in-depth consideration of supporting taxa descriptions.
 A single species, \textit{Scotopteryx chenopodiata} (Shaded Broad-Bar),  matches the size,  wing shape, and flight time,  but the unidentified specimen appearance is very plain,  and lacks the median dark cross band usually considered typical. The text in Skinner notes the superficial resemblance of this species to \textit{Hypena proboscidalis}, which is suggestive that other workers have encountered similar problems with ID. The online resource at \url{http://www.lepiforum.de/lepiwiki.pl?Scotopteryx_Chenopodiata} has a photograph of a specimen also lacking the median dark cross band, confirming that such forms have previously been observed. At this point we can be certain that we have arrived at a robust identification, so further investigation is not strictly necessary. However, 
 the dissection in Figure~\ref{fig:202009131026pjp-3}  confirms \textit{Scotopteryx chenopodiata} when compared to the example at \url{http://www.lepiforum.de/lepiwiki.pl?Scotopteryx_Chenopodiata}.
 
 \section*{Discussion and Conclusions}
-This example involving the correct separation of two common species of moth with superficial resemblance can easily be achieved with observations made at low magnifications. In this case the unusually plain form of this example of \textit{Scotopteryx chenopodiata} was instrumental in misdirecting the ID, a problem exacerbated by initial reliance on wing markings as the primary focus for identification. However, using low power magnification allowed the use of microscopic characters to achieve a correct determination by first diagnosing the family, and then shortlisting candidate taxa. In this case there was a single taxon  matched all characters save for the dark median band. However, online examples of this colour form were found confirming that the ID was robust.
+This example demonstrates how correct separation of two common species of moth with superficial resemblance can easily be achieved with observations made at low magnifications. In this case the unusually plain form of this example of \textit{Scotopteryx chenopodiata} was instrumental in misdirecting the ID, a problem exacerbated by initial reliance on wing markings as the primary focus for identification. However, using low power magnification allowed the use of microscopic characters to achieve a correct determination by first diagnosing the family, and then shortlisting candidate taxa. In this case there was a single taxon  matched all characters save for the dark median band. However, online examples of this colour form were found confirming that the ID was robust.
 
 We are led to the surprising conclusion that external microscopic features in macro-lepidoptera are a useful character when seeking a correct determination of an unknown specimen. While the  3 --- 30 x magnification used here requires access to a basic microscope, the bigger problem is the lack of British or European focussed resources to help interpret the observed characters.
 
@@ -83,13 +107,13 @@ We are led to the surprising conclusion that external microscopic features in ma
 	\begin{minipage}{0.45\textwidth}
 		\centering
 	\includegraphics[width=0.9\linewidth]{202009131026PJP-4}
-	\caption{Short undamaged palps eliminate Hypena proboscidalis as a candidate taxon.}
+	\caption{Short undamaged palps and lack of ocelli eliminate Hypena proboscidalis as a candidate taxon.}
 	\label{fig:20201112-1}
 	\end{minipage}\hfill
 	\begin{minipage}{0.45\textwidth}
 		\centering
 		\includegraphics[width=0.9\textwidth]{S202012271445-4} % second figure itself
-		\caption{Long, forward facing palps, and oceli above the compound eye of Hypena proboscidalis.}
+		\caption{Long, forward facing palps, and ocelli above the compound eye of Hypena proboscidalis.}
 		\label{fig:S202012271446-4}
 	\end{minipage}
 \end{figure}
@@ -118,5 +142,7 @@ We are led to the surprising conclusion that external microscopic features in ma
 %\end{figure}
 
 
-\bibliography{library}
+%\bibliography{library}
+\printbibliography
+
 \end{document}
